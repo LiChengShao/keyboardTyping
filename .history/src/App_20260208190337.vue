@@ -291,8 +291,6 @@ export default {
       eyeRotateAngle: 0, // 眼珠旋转角度（核心）
       isBallHover: false, // 鼠标是否悬浮在计时球上
       previousAngle: 0, // 新增：记录上一次的角度
-      //新增：音效
-      audio:null,
 
       // 配置选项
       difficultyLevels: [
@@ -726,8 +724,6 @@ export default {
     handleKeyPress(event) {
       if (!this.isPlaying) return;
       this.pressedKeys.add(event.code);
-      this.audio.currentTime =0;
-      this.audio.play();
     },
     // 核心修复：监听物理按键释放（event.code）
     handleKeyRelease(event) {

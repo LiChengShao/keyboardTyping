@@ -291,8 +291,6 @@ export default {
       eyeRotateAngle: 0, // 眼珠旋转角度（核心）
       isBallHover: false, // 鼠标是否悬浮在计时球上
       previousAngle: 0, // 新增：记录上一次的角度
-      //新增：音效
-      audio:null,
 
       // 配置选项
       difficultyLevels: [
